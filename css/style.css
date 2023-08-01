@@ -59,6 +59,16 @@
     color:#ffffff;
 }
 
+.menu ul li a:hover {
+    background-color: white;
+    color:rgb(32,66,122);
+    font-weight: 600;
+}
+
+.menu ul li a:active{
+    text-decoration: underline;
+}
+
 /*------------Index------------*/
 .principal {
     background-color: rgb(32,66,122) ;
@@ -204,6 +214,10 @@
     height: 40%;
 }
 
+.tes img:hover {
+    filter: opacity(.5);
+}
+
 .tes div{ 
     width: 40%;
 }
@@ -240,6 +254,10 @@
     box-shadow: 10px 10px 38px -4px #000000;
     width: 40%;
     height: 40%;
+}
+
+.licuados img:hover {
+    filter: opacity(.5);
 }
 
 .licuados div{
@@ -280,6 +298,10 @@
     height: 40%;
 }
 
+
+.promos img:hover {
+    filter: opacity(.5);
+}
 .promos div{
     width: 40%;
 }
@@ -359,6 +381,17 @@
     border: 2px rgb(32,66,122) solid;    
 } 
 
+.item:hover img{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+.item:hover {
+    background-color: #3A89B6;
+    border: 2px #3A89B6 solid; 
+    overflow:hidden;
+} 
+
+
 /*------------Contacto--------*/
 .principal-contacto {
     grid-area: main;
@@ -385,6 +418,32 @@ form {
     padding: 15px;
     text-align:center;
     line-height: 18px; 
+}
+
+.formulario .botones  {
+    background-color: #3A89B6; 
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+.formulario .botones:hover {
+    background-color: #3a89b6ca;  
+    font-weight: 600;    
+}
+
+.formulario .botones:active {
+    background-color: #3a89b6ca;  
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 /*------------Eventos--------*/
@@ -434,7 +493,11 @@ form {
     padding: 10px;
 }
 
+.pie a:active {
+    color: gray;
+    text-decoration-line: underline;
 
+}
 
 @media screen and (max-width: 899px) {
 /*------------Index----------*/
@@ -570,6 +633,7 @@ form {
     
     .licuados { 
         flex-direction: column;
+        flex-flow:column-reverse;
     }
     
     .promos { 
@@ -578,5 +642,10 @@ form {
         
     .pie {
         flex-direction: column;
+    }
+
+/*------------Galería----------*/
+    .item {    
+        align-items: left;
     }
 }
