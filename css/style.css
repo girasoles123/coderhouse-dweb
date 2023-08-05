@@ -651,9 +651,8 @@ form {
     }
 }
 
-@media screen and (max-width: 443px) {
+@media screen and (max-width: 511px) {
     .menu ul {
-        padding-left: 0;
         flex-direction: column-reverse;
         flex-wrap: wrap;
         text-align: center;     
