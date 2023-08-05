@@ -176,7 +176,7 @@
 /*------------Productos--------*/
 .grilla-productos{
     width: 100%;
-    margin: 0 auto;
+    margin: 0px auto;
     font-family:Montserrat, sans-serif; 
     font-style: normal;
     color:#ffffff;
@@ -204,7 +204,7 @@
     margin-top: 1px;
     background-image: url("../img/fondo2.png");
     display: flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: center;
 }
 
@@ -500,9 +500,11 @@ form {
 
 }
 
+/*------------MEDIA----------*/
+/*------------Media 899----------*/
 @media screen and (max-width: 899px) {
-/*------------Index----------*/
 
+    /*------------Index----------*/
     .grilla {
         grid-template-columns: repeat (2, 1fr);
         grid-template-rows: 130px 40px auto auto;
@@ -585,6 +587,7 @@ form {
     } 
 }
 
+/*------------Media 797----------*/
 @media screen and (max-width: 797px) {
 /*------------Index----------*/
     .grilla {
@@ -595,27 +598,30 @@ form {
         "nav"
         "main"
         "footer";
-    }  
+        }  
+
     .principal div { 
         flex-direction: column;
-    }    
+        }    
+
     .quees  {
         width: 100%;
         height: calc(100vh - 130px);   
-        background-image: url(../img/entrada_koena.jpg)
-    }
+        background-image: url(../img/entrada_koena.jpg);
+        background-position: 0px 270px;
+        }
         
     .vision h2 {
         padding-left: 25px;
         text-align: left;
-    }
+        }
         
     .vision p {
         margin-left: 15px;
         text-align: left;
         border-left: 2px #ffffff solid;
         border-right: none;
-    }    
+        }        
 
 /*------------Productos----------*/
     .grilla-productos {
@@ -626,24 +632,26 @@ form {
         "nav"
         "main"
         "footer";
-    } 
-    
+        } 
+
     .tes { 
         flex-direction: column;
+        background-position: 0px 270px;
     }
-    
+        
+
     .licuados { 
         flex-direction: column;
         flex-flow:column-reverse;
-    }
+        }
     
     .promos { 
         flex-direction: column;
-    }
+        }
         
     .pie {
         flex-direction: column;
-    }
+        }
 
 /*------------Galería----------*/
     .item {    
@@ -651,14 +659,22 @@ form {
     }
 }
 
+/*------------Media 511----------*/
 @media screen and (max-width: 511px) {
+/*------------Index----------*/
     .menu ul {
-        flex-direction: column-reverse;
+        flex-direction: column;
         flex-wrap: wrap;
         text-align: center;     
         justify-content:space-between;
         align-items: center;
         box-sizing: content-box;
+    }
+
+    .menu ul li a:hover {
+        background-color:transparent ;
+        color:rgb(32,66,122);
+        font-weight: 600;
     }
 
     .grilla{
@@ -669,6 +685,86 @@ form {
         height: calc(100vh - 230px);   
         background-image: url(../img/entrada3.jpg);
         background-size:cover;
+        background-position: 0px 270px;
+    }
+
+    .vision {
+        width: 100%;
+    }
+
+    .vision h2 {
+        padding-left: 15px;
+    }
+        
+    .vision p {
+        margin-left: 15px;
+    }  
+
+/*------------Productos----------*/
+    .principal-productos{
+    box-sizing: content-box;
+    padding-top: 100px;
+    padding-left: 0px;
+    } 
+
+    
+    .tes { 
+        padding:10px;
     }
     
+    .tes div{ 
+        width: 75%;
+    }    
+    .tes img{ 
+        width: 75%;
+    }    
+
+    .licuados { 
+        padding:10px;
+    }
+    .licuados div{ 
+        width: 75%;
+    }    
+    .licuados img{ 
+        width: 75%;
+    }    
+
+    .promos { 
+        padding:10px;
+    }
+    .promos div{ 
+        width: 75%;
+    }    
+    .promos img{ 
+        width: 75%;
+    }    
+
+/*------------Eventos----------*/
+    .principal-eventos{
+        padding-top: 100px;
+    } 
+
+/*------------Galería----------*/
+    .principal-galeria {
+        background-image: url("../img/fondo2.png");
+    }
+    
+    .principal-galeria .productos {    
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+
+/*------------Contactos----------*/
+    .formulario p{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 10px 0 10px 0;
+    } 
+    form {   
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 10px 0 10px 0;        
+    } 
 }
