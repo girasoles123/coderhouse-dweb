@@ -29,6 +29,7 @@
     background-position: 0px 0px;
     top: 0;
     position: sticky;
+    z-index: 10;
     font-size: 17px; 
     line-height: 25px; 
     grid-area: header;
@@ -601,7 +602,7 @@ form {
     .quees  {
         width: 100%;
         height: calc(100vh - 130px);   
-        background-image: url(../img/inaugura1inaugura.jpg)
+        background-image: url(../img/entrada_koena.jpg)
     }
         
     .vision h2 {
@@ -648,4 +649,27 @@ form {
     .item {    
         align-items: left;
     }
+}
+
+@media screen and (max-width: 443px) {
+    .menu ul {
+        padding-left: 0;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;     
+        justify-content:space-between;
+        align-items: center;
+        box-sizing: content-box;
+    }
+
+    .grilla{
+        grid-template-rows: 230px 40px auto auto;
+    }   
+    .quees  {
+        width: 100%;
+        height: calc(100vh - 230px);   
+        background-image: url(../img/entrada3.jpg);
+        background-size:cover;
+    }
+    
 }
