@@ -1,0 +1,278 @@
+/*------------MEDIA----------*/
+/*------------Media 899----------*/
+@media screen and (max-width: 899px) {
+
+    .grilla {
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: 130px 40px auto auto;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }  
+
+    /*------------Index----------*/
+    .mision h2 {
+        padding-left: 25px;
+    }
+    
+    .mision p {
+        margin-right: 0%;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    
+    .vision h2 {
+        padding-right: 25px;
+    }
+    
+    .vision p {
+        margin-left: 0%;
+        margin-right: 15px;
+        font-size: 13px;
+    }    
+
+/*------------productos----------*/
+    .principal-productos{
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 2px; 
+        
+        .tes h2{ 
+            font-size: 28px;
+            line-height: 28px; 
+        }
+        
+        .tes p{
+            font-size: 12px;
+            line-height: 20px; 
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .licuados h2{ 
+            font-size: 28px;
+            line-height: 28px;   
+        }
+        
+        .licuados p{
+            font-size: 12px;
+            line-height: 20px;   
+        }
+
+        .promos h2{ 
+            font-size: 28px;
+            line-height: 28px;   
+        }
+        
+        .promos p{
+            font-size: 12px;
+            line-height: 20px;   
+        }    
+    }
+
+    .pie {
+            font-size: 25px;   
+    } 
+}
+
+/*------------Media 797----------*/
+@media screen and (max-width: 797px) {
+/*------------Index----------*/
+    .grilla {
+        grid-template-columns:  1fr;
+        grid-template-rows: 130px 40px auto auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }  
+    .quees  {
+        width: 100%;
+        height: calc(100vh - 130px);   
+        background-image: url(../img/entrada_koena.jpg);
+        background-position: 0px 270px;
+    }
+    .principal div { 
+        flex-direction: column;
+        .vision h2 {
+            padding-left: 25px;
+            text-align: left;
+        }
+        
+        .vision p {
+            margin-left: 15px;
+            text-align: left;
+            border-left: 2px nth($paleta-colores, 3) solid;
+            border-right: none;
+        }        
+    } 
+
+/*------------Productos----------*/
+    .tes { 
+        flex-direction: column;
+        background-position: 0px 270px;
+    
+        div{ 
+            margin: 0px 0px 10px 0px;     
+            width: 60%;
+            h2{ 
+                margin: 20px 80px 10px 0px;
+                padding-bottom: 3px;
+            }
+            p{ 
+                padding-bottom: 5px;
+            }    
+        }    
+        img{ 
+            width: 60%;
+        } 
+    }
+
+    .licuados { 
+        flex-direction: column;
+        flex-flow:column-reverse;
+        
+        img{ 
+            width: 60%;
+        }        
+        div{ 
+            margin: 0px 0px 10px 0px;
+            width: 60%;
+            h2{ 
+                margin: 20px 20px 10px 0px;
+                padding-bottom: 3px;
+            }        
+        }        
+    }     
+
+    .promos { 
+            flex-direction: column;
+        div{ 
+            margin: 0px 0px 10px 0px;
+            width: 60%;
+        }
+        img{ 
+            width: 60%;
+        }         
+    }
+
+
+/*------------Galería----------*/
+    .item {    
+        align-items: left;
+    }
+
+/*------------Galería----------*/
+    .pie {
+        flex-direction: column;
+        }
+}
+
+
+/*------------Media 511----------*/
+@media screen and (max-width: 511px) {
+    .grilla{
+        grid-template-rows: 230px 40px auto auto;
+    }      
+    .menu ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;     
+        justify-content:space-between;
+        align-items: center;
+        box-sizing: content-box;
+        li a:hover {
+            background-color:transparent ;
+            color:nth($paleta-colores, 1);
+            font-weight: 600;
+        }
+    }
+
+ 
+/*------------Index----------*/    
+    .quees  {
+        width: 100%;
+        height: calc(100vh - 230px);   
+        background-image: url(../img/entrada3.jpg);
+        background-size:cover;
+        background-position: 0px 270px;
+    }
+
+    .vision {
+        width: 100%;
+        h2 {
+            padding-left: 15px;
+        }
+            
+        p {
+            margin-left: 15px;
+        }     
+    }
+
+/*------------Productos----------*/
+    .principal-productos{
+    box-sizing: content-box;
+    padding-top: 100px;
+    padding-left: 0px;
+        .tes { 
+            padding:10px;
+            div{ 
+                width: 75%;
+            }    
+            img{ 
+                width: 75%;
+            }     
+        }
+
+        .licuados { 
+            padding:10px;
+            div{ 
+                width: 75%;
+            }    
+            img{ 
+                width: 75%;
+            }    
+        }
+
+        .promos { 
+            padding:10px;
+            div{ 
+                width: 75%;
+            }    
+            img{ 
+                width: 75%;
+            }      
+        }
+    } 
+/*------------Eventos----------*/
+    .principal-eventos{
+        padding-top: 100px;
+    } 
+
+/*------------Galería----------*/
+    .principal-galeria {
+        background-image: url("../img/fondo2.png");
+        .productos {    
+            justify-content:space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 100px;
+        }    
+    }
+    
+
+/*------------Contactos----------*/
+    .formulario p{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 10px 0 10px 0;
+    } 
+    form {   
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 10px 0 10px 0;        
+    } 
+}

@@ -1,0 +1,526 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.principal-productos .tes div h2, .principal-productos .licuados div h2, .principal-productos .promos div h2, .principal-eventos h2, .formulario h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+  color: white; }
+
+/*--------RESET------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.grilla {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-rows: 130px 40px auto auto;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.encabezado {
+  background-image: url("../img/fondo.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  top: 0px;
+  position: sticky;
+  z-index: 10;
+  font-size: 17px;
+  line-height: 25px;
+  grid-area: header; }
+  .encabezado img {
+    padding-left: 5px;
+    padding-top: 0px; }
+  .encabezado .menu {
+    padding-top: 25px;
+    grid-area: nav; }
+    .encabezado .menu ul {
+      padding: 13px;
+      background-color: #3a89b6;
+      list-style: none;
+      text-align: left;
+      display: flex;
+      justify-content: right;
+      align-items: center; }
+      .encabezado .menu ul li a {
+        padding: 15px;
+        text-decoration: none;
+        color: white; }
+        .encabezado .menu ul li a:hover {
+          background-color: white;
+          color: #20427a;
+          font-weight: 600; }
+        .encabezado .menu ul li a:active {
+          text-decoration: underline; }
+
+.principal {
+  background-color: #20427a;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 25px;
+  color: white;
+  text-align: left;
+  grid-area: main; }
+  .principal .quees {
+    width: 100%;
+    height: calc(100vh - 130px);
+    background-image: url(../img/inaugura.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 0px; }
+    .principal .quees h2 {
+      padding-top: 30px;
+      margin-left: 50px;
+      text-align: left;
+      font-size: 30px;
+      line-height: 40px; }
+    .principal .quees p {
+      margin-right: 40%;
+      margin-top: 10px;
+      margin-left: 50px;
+      padding-left: 0px;
+      font-weight: 400;
+      font-size: 15px;
+      font-style: normal;
+      line-height: 20px;
+      text-align: left; }
+  .principal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .principal div .mision {
+      background-color: #20427a;
+      padding-bottom: 10px; }
+      .principal div .mision h2 {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding-top: 10px;
+        padding-left: 30px;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: left; }
+      .principal div .mision p {
+        margin-right: 20%;
+        margin-left: 30px;
+        padding: 5px;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        border-left: 2px white solid; }
+    .principal div .vision {
+      background-color: #20427a;
+      padding-bottom: 10px; }
+      .principal div .vision h2 {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding-top: 10px;
+        padding-right: 30px;
+        font-size: 25px;
+        font-style: normal;
+        line-height: 30px;
+        text-align: right;
+        color: white; }
+      .principal div .vision p {
+        margin-left: 10%;
+        margin-right: 30px;
+        padding: 5px;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        border-right: 2px white solid; }
+
+.principal-productos {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 12px;
+  color: black;
+  text-align: left;
+  grid-area: main; }
+  .principal-productos .tes {
+    margin-top: 0px;
+    background-image: url("../img/fondo2.png");
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .principal-productos .tes div {
+      width: 40%; }
+      .principal-productos .tes div h2 {
+        padding: 0px 10px 10px 2px;
+        text-align: left;
+        margin: 0px; }
+      .principal-productos .tes div p {
+        padding: 0px 10px 0px 5px;
+        font-weight: 500;
+        text-align: left;
+        word-spacing: 1px;
+        line-height: 20px;
+        border-left: 2px #3a89b6 solid;
+        margin: 0px; }
+    .principal-productos .tes img {
+      padding: 0px 0px 0px 10 px;
+      box-shadow: 10px 10px 38px -4px black;
+      width: 40%;
+      height: 40%; }
+      .principal-productos .tes img:hover {
+        filter: opacity(0.5); }
+  .principal-productos .licuados {
+    background-image: url("../img/fondo2.png");
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .principal-productos .licuados div {
+      width: 40%; }
+      .principal-productos .licuados div h2 {
+        padding: 10px 5px 10px 0px;
+        text-align: right;
+        margin: 0px; }
+      .principal-productos .licuados div p {
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 10px;
+        font-weight: 500;
+        text-align: right;
+        word-spacing: 1px;
+        line-height: 20px;
+        border-right: 2px #3a89b6; }
+    .principal-productos .licuados img {
+      box-shadow: 10px 10px 38px -4px black;
+      width: 40%;
+      height: 40%; }
+      .principal-productos .licuados img:hover {
+        filter: opacity(0.5); }
+  .principal-productos .promos {
+    background-image: url("../img/fondo2.png");
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .principal-productos .promos div {
+      width: 40%; }
+      .principal-productos .promos div h2 {
+        padding: 10px 10px 10px 2px;
+        text-align: left;
+        margin: 0px; }
+      .principal-productos .promos div h3 {
+        padding-left: 15px;
+        font-size: 12px;
+        border-left: 2px #3a89b6 solid;
+        margin: 0px; }
+      .principal-productos .promos div p {
+        padding-left: 20px;
+        padding-right: 10px;
+        font-weight: 500;
+        text-align: left;
+        word-spacing: 1px;
+        line-height: 20px;
+        border-left: 2px #3a89b6;
+        margin: 0px; }
+    .principal-productos .promos img {
+      box-shadow: 10px 10px 38px -4px black;
+      width: 40%;
+      height: 40%; }
+      .principal-productos .promos img:hover {
+        filter: opacity(0.5); }
+
+.principal-eventos {
+  background-image: url("../img/fondo2.png");
+  grid-area: main;
+  color: black;
+  text-align: center;
+  padding: 15px 0px 30px 0px; }
+  .principal-eventos h2 {
+    margin-top: 30px; }
+  .principal-eventos .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+
+.principal-galeria {
+  grid-area: main;
+  background-image: url("../img/fondo2.png"); }
+  .principal-galeria .productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .principal-galeria .productos .item {
+      padding: 30px;
+      background-color: #20427a;
+      border: 2px #20427a solid; }
+      .principal-galeria .productos .item:hover {
+        background-color: #3a89b6;
+        border: 2px #3a89b6 solid;
+        overflow: hidden; }
+      .principal-galeria .productos .item img {
+        width: 300px;
+        height: 300px;
+        box-shadow: 10px 10px 38px -4px black; }
+        .principal-galeria .productos .item img:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3); }
+      .principal-galeria .productos .item h2 {
+        font-size: 20px;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center; }
+
+.formulario {
+  background-color: #20427a;
+  font-size: 15px;
+  font-style: normal;
+  letter-spacing: 0px;
+  word-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  color: white; }
+  .formulario h2 {
+    margin-top: 15px;
+    text-align: center; }
+  .formulario p {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px;
+    text-align: center;
+    line-height: 18px; }
+  .formulario .form {
+    margin-left: 40%;
+    margin-right: 40%; }
+    .formulario .form .botones {
+      background-color: #3a89b6;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      padding: 10px 10px;
+      margin: 5px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .formulario .form .botones:hover {
+        background-color: #3a89b6;
+        font-weight: 600; }
+      .formulario .form .botones:active {
+        background-color: #3a89b6;
+        box-shadow: 0 5px #666666;
+        transform: translateY(4px); }
+
+.pie {
+  grid-area: footer;
+  background-color: #20427a;
+  border-top: 2px white solid;
+  font-size: 15px;
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly; }
+  .pie div h2 {
+    font-style: normal;
+    font-size: 25px;
+    text-align: left;
+    padding: 10px; }
+  .pie div a {
+    font-size: 13px;
+    color: white;
+    padding: 10px; }
+    .pie div a:active {
+      color: #666666;
+      text-decoration-line: underline;
+      align-items: center; }
+
+/*------------MEDIA----------*/
+/*------------Media 899----------*/
+@media screen and (max-width: 899px) {
+  .grilla {
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: 130px 40px auto auto;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  /*------------Index----------*/
+  .mision h2 {
+    padding-left: 25px; }
+  .mision p {
+    margin-right: 0%;
+    margin-left: 15px;
+    font-size: 13px; }
+  .vision h2 {
+    padding-right: 25px; }
+  .vision p {
+    margin-left: 0%;
+    margin-right: 15px;
+    font-size: 13px; }
+  /*------------productos----------*/
+  .principal-productos {
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 2px; }
+    .principal-productos .tes h2 {
+      font-size: 28px;
+      line-height: 28px; }
+    .principal-productos .tes p {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .principal-productos .licuados h2 {
+      font-size: 28px;
+      line-height: 28px; }
+    .principal-productos .licuados p {
+      font-size: 12px;
+      line-height: 20px; }
+    .principal-productos .promos h2 {
+      font-size: 28px;
+      line-height: 28px; }
+    .principal-productos .promos p {
+      font-size: 12px;
+      line-height: 20px; }
+  .pie {
+    font-size: 25px; } }
+
+/*------------Media 797----------*/
+@media screen and (max-width: 797px) {
+  /*------------Index----------*/
+  .grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 40px auto auto;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .quees {
+    width: 100%;
+    height: calc(100vh - 130px);
+    background-image: url(../img/entrada_koena.jpg);
+    background-position: 0px 270px; }
+  .principal div {
+    flex-direction: column; }
+    .principal div .vision h2 {
+      padding-left: 25px;
+      text-align: left; }
+    .principal div .vision p {
+      margin-left: 15px;
+      text-align: left;
+      border-left: 2px white solid;
+      border-right: none; }
+  /*------------Productos----------*/
+  .tes {
+    flex-direction: column;
+    background-position: 0px 270px; }
+    .tes div {
+      margin: 0px 0px 10px 0px;
+      width: 60%; }
+      .tes div h2 {
+        margin: 20px 80px 10px 0px;
+        padding-bottom: 3px; }
+      .tes div p {
+        padding-bottom: 5px; }
+    .tes img {
+      width: 60%; }
+  .licuados {
+    flex-direction: column;
+    flex-flow: column-reverse; }
+    .licuados img {
+      width: 60%; }
+    .licuados div {
+      margin: 0px 0px 10px 0px;
+      width: 60%; }
+      .licuados div h2 {
+        margin: 20px 20px 10px 0px;
+        padding-bottom: 3px; }
+  .promos {
+    flex-direction: column; }
+    .promos div {
+      margin: 0px 0px 10px 0px;
+      width: 60%; }
+    .promos img {
+      width: 60%; }
+  /*------------Galería----------*/
+  .item {
+    align-items: left; }
+  /*------------Galería----------*/
+  .pie {
+    flex-direction: column; } }
+
+/*------------Media 511----------*/
+@media screen and (max-width: 511px) {
+  .grilla {
+    grid-template-rows: 230px 40px auto auto; }
+  .menu ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box; }
+    .menu ul li a:hover {
+      background-color: transparent;
+      color: #20427a;
+      font-weight: 600; }
+  /*------------Index----------*/
+  .quees {
+    width: 100%;
+    height: calc(100vh - 230px);
+    background-image: url(../img/entrada3.jpg);
+    background-size: cover;
+    background-position: 0px 270px; }
+  .vision {
+    width: 100%; }
+    .vision h2 {
+      padding-left: 15px; }
+    .vision p {
+      margin-left: 15px; }
+  /*------------Productos----------*/
+  .principal-productos {
+    box-sizing: content-box;
+    padding-top: 100px;
+    padding-left: 0px; }
+    .principal-productos .tes {
+      padding: 10px; }
+      .principal-productos .tes div {
+        width: 75%; }
+      .principal-productos .tes img {
+        width: 75%; }
+    .principal-productos .licuados {
+      padding: 10px; }
+      .principal-productos .licuados div {
+        width: 75%; }
+      .principal-productos .licuados img {
+        width: 75%; }
+    .principal-productos .promos {
+      padding: 10px; }
+      .principal-productos .promos div {
+        width: 75%; }
+      .principal-productos .promos img {
+        width: 75%; }
+  /*------------Eventos----------*/
+  .principal-eventos {
+    padding-top: 100px; }
+  /*------------Galería----------*/
+  .principal-galeria {
+    background-image: url("../img/fondo2.png"); }
+    .principal-galeria .productos {
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 100px; }
+  /*------------Contactos----------*/
+  .formulario p {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 0 10px 0; }
+  form {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px 0 10px 0; } }

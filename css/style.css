@@ -27,7 +27,7 @@
     background-image: url("../img/fondo.png");
     Background-repeat: no-repeat;
     background-position: 0px 0px;
-    top: 0;
+    top: 0px;
     position: sticky;
     z-index: 10;
     font-size: 17px; 
@@ -37,15 +37,16 @@
 
 .encabezado img {
     padding-left: 5px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 .menu {
+    padding-top: 25px;
     grid-area: nav;
 }
 
 .menu ul {
-    padding: 15px;
+    padding: 13px;
     background-color: #3A89B6;
     list-style: none;
     text-align: left;     
@@ -72,7 +73,7 @@
 
 /*------------Index------------*/
 .principal {
-    background-color: rgb(32,66,122) ;
+    background-color: rgb(32,66,122);
     font-family: Montserrat, sans-serif; 
     font-size: 12px; 
     font-style: normal;
@@ -82,12 +83,6 @@
     grid-area: main;
 }
 
-.principal div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}    
-
 .quees  {
     width: 100%;
     height: calc(100vh - 130px);   
@@ -96,6 +91,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding-top: 0px;
 }
 
 .quees h2 {
@@ -110,13 +106,19 @@
     margin-right: 40%;
     margin-top: 10px;
     margin-left: 50px;
-    padding-left: px;
+    padding-left: 0px;
     font-weight: 400;
     font-size: 15px;
     font-style: normal;
     line-height: 20px; 
     text-align:left;
 }
+
+.principal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
 
 .mision {
     background-color: rgb(32,66,122);
@@ -174,42 +176,26 @@
 
 
 /*------------Productos--------*/
-.grilla-productos{
-    width: 100%;
-    margin: 0px auto;
-    font-family:Montserrat, sans-serif; 
-    font-style: normal;
-    color:#ffffff;
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 130px 40px auto auto;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-} 
-
 .principal-productos {
     font-family: Montserrat, sans-serif; 
     font-size: 12px; 
     font-style: normal;
-    line-height: 25px; 
+    line-height: 12px; 
     color:#000000 ;
     text-align: left; 
     grid-area: main;
 }
 
 .tes{ 
-    margin-top: 1px;
+    margin-top: 0px;
     background-image: url("../img/fondo2.png");
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items: center;
 }
 
 .tes img{ 
-    padding-top: 1px;
+    padding: 0px 0px 0px 10 px;
     box-shadow: 10px 10px 38px -4px #000000;
     width: 40%;
     height: 40%;
@@ -224,23 +210,22 @@
 }
 
 .tes H2{ 
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 2px;
+    padding: 0px 10px 10px 2px;
     font-size: 35px;
     font-weight: 600;    
     text-align: left;  
-    line-height: 35px;   
+    line-height: 35px;  
+    margin: 0px;
 }
 
 .tes p{
-    padding-left: 15px;
-    padding-right: 10px;    
+    padding: 0px 10px 0px 5px;
     font-weight: 500;    
     text-align: left;  
     word-spacing: 1px;
     line-height: 20px;   
     border-left: 2px #3A89B6 solid;
+    margin: 0px;
 }
 
 .licuados{ 
@@ -266,16 +251,16 @@
 }
 
 .licuados H2{ 
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 2px;
+    padding: 10px 5px 10px 0px;
     font-size: 35px;
     font-weight: 600;    
     text-align: right;  
-    line-height: 35px;   
+    line-height: 35px;  
+    margin: 0px;
 }
 
 .licuados p{ 
+    margin: 0px;
     padding-left: 15px;
     padding-right: 10px;    
     font-weight: 500;    
@@ -299,27 +284,28 @@
     height: 40%;
 }
 
-
 .promos img:hover {
     filter: opacity(.5);
 }
+
 .promos div{
     width: 40%;
 }
 
 .promos H2{ 
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 2px;
+    padding: 10px 10px 10px 2px;
     font-size: 35px;
     font-weight: 600;    
     text-align: left;  
     line-height: 35px;   
+    margin: 0px;
 }
 
 .promos H3{
     padding-left: 15px;
+    font-size: 12px;
     border-left: 2px #3A89B6 solid;
+    margin: 0px;
 }    
 
 .promos p{ 
@@ -330,29 +316,58 @@
     word-spacing: 1px;
     line-height: 20px;  
     border-left: 2px #3A89B6 solid;
+    margin: 0px;
 }
 
-/*------------Galería--------*/
-.grilla-galeria {
-    width: 100%;
-    margin: 0 auto;
-    font-family:Montserrat, sans-serif; 
-    font-style: normal;
-    color:#ffffff;
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 130px 40px auto auto;
-    gap: 10px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-} 
+/*------------Eventos--------*/
 
+.principal-eventos {
+    background-image: url("../img/fondo2.png");
+    grid-area: main;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 0px 30px 0px;
+}
+
+.principal-eventos h2 { 
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.principal-eventos .tarjetas { 
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*------------Galería--------*/
 .principal-galeria {
     grid-area: main;
     background-image: url("../img/fondo2.png");
+}
+
+h2{ 
+    padding: 30px 5px 10px 0px;
+    font-size: 35px;
+    font-weight: 600;    
+    text-align: center;  
+    line-height: 35px;
+    color: #000000;
+    margin: 0px;
+}
+
+p{ 
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 10px;    
+    font-weight: 500;    
+    text-align: center;  
+    word-spacing: 1px;
+    line-height: 20px;   
+    color: #000000;
 }
 
 .principal-galeria .productos {    
@@ -361,21 +376,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
-.principal-galeria div div img{
-    width: 300px;
-    height: 300px;
-    box-shadow: 10px 10px 38px -4px  #000000;
-} 
-
-.principal-galeria div div h2{
-    font-size: 20px;  
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 300; 
-    text-align: center;
-} 
-
 .item{
     margin: 10px;
     background-color: rgb(32,66,122);
@@ -393,14 +393,31 @@
 } 
 
 
+.principal-galeria div div img{
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 38px -4px  #000000;
+} 
+
+.principal-galeria div div h2{
+    font-size: 20px;  
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300; 
+    text-align: center;
+} 
+
+
 /*------------Contacto--------*/
 .principal-contacto {
     grid-area: main;
+    color:#ffffff; 
 }
 
 form { 
     margin-left: 40%;
-    margin-right: 45%;
+    margin-right: 45%;    
+    color:#ffffff; 
 }
 
 .formulario {
@@ -410,15 +427,26 @@ form {
     letter-spacing: 0px;
     word-spacing: 1px;
     line-height: 30px; 
-    text-align:left; 
     color:#ffffff; 
 }
+
+.formulario h2 {
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 500;    
+    text-align: left;  
+    line-height: 35px;  
+    text-align:center; 
+    color:#ffffff;   
+    }
+
 .formulario p {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 15px;
     text-align:center;
-    line-height: 18px; 
+    line-height: 18px;    
+    color:#ffffff;  
 }
 
 .formulario .botones  {
@@ -447,26 +475,6 @@ form {
     transform: translateY(4px);
 }
 
-/*------------Eventos--------*/
-.grilla-eventos{
-    width: 100%;
-    margin: 0 auto;
-    font-family:Montserrat, sans-serif; 
-    font-style: normal;
-    color:#ffffff;
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 130px 40px auto auto;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-} 
-
-.principal-eventos {
-    grid-area: main;
-}
 
 /*------------Footer----------*/
 .pie {
@@ -536,30 +544,22 @@ form {
     }    
 
 /*------------productos----------*/
-    .grilla-productos {
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-rows: 130px 40px auto auto;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "main main"
-        "footer footer";
-    } 
-    
     .principal-productos{
         padding-right: 10px;
         padding-bottom: 5px;
-        padding-left: 2px;        
+        padding-left: 2px; 
     }
 
     .tes h2{ 
         font-size: 28px;
-        line-height: 28px;   
+        line-height: 28px; 
     }
     
     .tes p{
         font-size: 12px;
-        line-height: 15px;   
+        line-height: 20px; 
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .licuados h2{ 
@@ -569,7 +569,7 @@ form {
     
     .licuados p{
         font-size: 12px;
-        line-height: 15px;   
+        line-height: 20px;   
     }
 
     .promos h2{ 
@@ -579,7 +579,7 @@ form {
     
     .promos p{
         font-size: 12px;
-        line-height: 15px;   
+        line-height: 20px;   
     }
 
     .pie {
@@ -600,55 +600,76 @@ form {
         "footer";
         }  
 
-    .principal div { 
-        flex-direction: column;
-        }    
-
     .quees  {
         width: 100%;
         height: calc(100vh - 130px);   
         background-image: url(../img/entrada_koena.jpg);
         background-position: 0px 270px;
-        }
+    }
         
-    .vision h2 {
+    .principal div { 
+        flex-direction: column;
+        .vision h2 {
         padding-left: 25px;
         text-align: left;
         }
-        
+    }         
     .vision p {
         margin-left: 15px;
         text-align: left;
         border-left: 2px #ffffff solid;
         border-right: none;
-        }        
+    }        
+
 
 /*------------Productos----------*/
-    .grilla-productos {
-        grid-template-columns: repeat (1, 1fr);
-        grid-template-rows: 130px 40px auto auto;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";
-        } 
-
     .tes { 
         flex-direction: column;
         background-position: 0px 270px;
     }
-        
+    
+    .tes div{ 
+        margin: 0px 0px 10px 0px;     
+        width: 60%;
+    }    
+    .tes img{ 
+        width: 60%;
+    } 
+    .tes h2{ 
+        margin: 20px 80px 10px 0px;
+        padding-bottom: 3px;
+    }
+    .tes p{ 
+        padding-bottom: 5px;
+    }
 
     .licuados { 
         flex-direction: column;
         flex-flow:column-reverse;
         }
-    
+    .licuados div{ 
+        margin: 0px 0px 10px 0px;
+        width: 60%;
+    }        
+    .licuados img{ 
+        width: 60%;
+    }     
+    .licuados h2{ 
+        margin: 20px 20px 10px 0px;
+        padding-bottom: 3px;
+    }
+
     .promos { 
         flex-direction: column;
         }
-        
+    .promos div{ 
+        margin: 0px 0px 10px 0px;
+        width: 60%;
+    }
+    .promos img{ 
+        width: 60%;
+    } 
+
     .pie {
         flex-direction: column;
         }
@@ -658,6 +679,38 @@ form {
         align-items: left;
     }
 }
+
+/*------------Contactos----------*/
+.formulario h2{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px 0 10px 0;
+    font-size: 28px;
+}     
+
+.formulario p{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px 0 10px 0;
+    font-size: 12px;
+} 
+
+form {   
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 10px 0 10px 0;
+    font-size: 12px;        
+} 
+
+.formulario .botones  {
+    font-size: 10px;
+    font-weight: 300;  
+    padding: 3px 3px;
+    margin: 5px 5px;  
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+
 
 /*------------Media 511----------*/
 @media screen and (max-width: 511px) {
@@ -707,7 +760,6 @@ form {
     padding-left: 0px;
     } 
 
-    
     .tes { 
         padding:10px;
     }
@@ -741,7 +793,7 @@ form {
 
 /*------------Eventos----------*/
     .principal-eventos{
-        padding-top: 100px;
+        padding-top: 20px;
     } 
 
 /*------------Galería----------*/
@@ -757,14 +809,32 @@ form {
     }
 
 /*------------Contactos----------*/
+    .formulario h2{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20px 0 10px 0;
+        font-size: 28px;
+    }     
+    
     .formulario p{
         margin-left: 10%;
         margin-right: 10%;
-        padding: 10px 0 10px 0;
+        padding: 5px 0 10px 0;
+        font-size: 12px;
     } 
+
     form {   
-        margin-left: 15%;
-        margin-right: 15%;
-        padding: 10px 0 10px 0;        
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 10px 0 10px 0;
+        font-size: 12px;        
     } 
+
+    .formulario .botones  {
+        font-size: 10px;
+        font-weight: 300;  
+        padding: 3px 3px;
+        margin: 5px 5px;  
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    }
 }
