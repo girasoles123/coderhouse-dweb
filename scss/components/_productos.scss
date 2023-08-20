@@ -1,42 +1,40 @@
 .principal-productos{ 
+    grid-area: main;    
     font-family: Montserrat, sans-serif; 
     font-size: 12px; 
     font-style: normal;
     line-height: 12px; 
-    color:nth($paleta-colores, 4) ;
-    text-align: left; 
-    grid-area: main;
+    color:nth($paleta-colores, 4);
+    margin-top: 0px;
+    background-image: url("../img/fondo2.png");
+
+    
+    h1{
+        @extend %h1Pages;
+        text-align:center; 
+    }
+
     .tes{
-        margin-top: 0px;
-        background-image: url("../img/fondo2.png");
         display: flex;
         justify-content:center;
         align-items: center;
         div{
             width: 40%;
             h2{
-                padding: 0px 10px 10px 2px;
-                @extend %titulos;
+                @extend %h2Productos;  
                 text-align: left;  
-                margin: 0px;    
             }
             p{
-                padding: 0px 10px 0px 5px;
-                font-weight: 500;    
+                @extend %pProductos;
                 text-align: left;  
-                word-spacing: 1px;
-                line-height: 20px;   
                 border-left: 2px nth($paleta-colores, 2) solid;
-                margin: 0px;
             }
         }
         img{
-            padding: 0px 0px 0px 10 px;
-            box-shadow: 10px 10px 38px -4px nth($paleta-colores, 4);
-            width: 40%;
-            height: 40%;
+            @extend %imgProductos;
+            transition: opacity 2s ease;
             &:hover{
-                filter: opacity(.5); 
+                opacity: 0.5;
             }  
         }
     }  
@@ -49,28 +47,20 @@
         div{
             width: 40%;
             h2{
-                padding: 10px 5px 10px 0px;
-                @extend %titulos;  
+                @extend %h2Productos; 
                 text-align: right;  
-                margin: 0px;                
             }
             p{
-                margin: 0px;
-                padding-left: 15px;
-                padding-right: 10px;    
-                font-weight: 500;    
+                @extend %pProductos;
                 text-align: right;  
-                word-spacing: 1px;
-                line-height: 20px;   
-                border-right: 2px nth($paleta-colores, 2);
+                border-right: 2px nth($paleta-colores, 2) solid;
             }
         }
         img{    
-            box-shadow: 10px 10px 38px -4px nth($paleta-colores, 4);
-            width: 40%;
-            height: 40%;
+            @extend %imgProductos;
+            transition: opacity 2s ease;
             &:hover{
-            filter: opacity(.5);
+                opacity: 0.5;
             }    
         }
     }  
@@ -80,37 +70,31 @@
         display: flex;
         justify-content:center;
         align-items: center;
+        margin-bottom: 15px;
         div{
             width: 40%;
             h2{
-                padding: 10px 10px 10px 2px;
-                @extend %titulos;   
+                @extend %h2Productos;  
                 text-align: left;  
-                margin: 0px;
             }
             h3{
                 padding-left: 15px;
                 font-size: 12px;
                 border-left: 2px nth($paleta-colores, 2) solid;
                 margin: 0px;
+                text-align: left;  
             }
             p{
-                padding-left: 20px;
-                padding-right: 10px;    
-                font-weight: 500;    
+                @extend %pProductos;
                 text-align: left;  
-                word-spacing: 1px;
-                line-height: 20px;  
-                border-left: 2px nth($paleta-colores, 2);
-                margin: 0px;
+                border-left: 2px nth($paleta-colores, 2)solid;                
             }
         }
         img{ 
-            box-shadow: 10px 10px 38px -4px nth($paleta-colores, 4);
-            width: 40%;
-            height: 40%;
+            @extend %imgProductos;
+            transition: opacity 2s ease;
             &:hover{
-                filter: opacity(.5);
+                opacity: 0.5;
             }
         }
     }    

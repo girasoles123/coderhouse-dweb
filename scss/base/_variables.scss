@@ -1,7 +1,7 @@
 //*LISTAS
 
 $paleta-colores:
-rgb(32,66,122),
+rgb(32, 66, 122),
 rgb(58, 137, 182),
 rgb(255, 255, 255),
 rgb(0, 0, 0),
@@ -9,10 +9,38 @@ rgb(102, 102, 102);
 
 
 //*EXTEND
+%h1Pages{
+    padding-top: 20px;
+    margin-left: 50px;    
+    font-size: 35px;
+    font-weight: 600; 
+    line-height: 35px; 
+}
+
 %titulos{
     font-family: Montserrat, sans-serif;
     font-size: 35px;
     font-weight: 600;    
     line-height: 35px;
     color: white;
+}
+
+%h2Productos{
+    padding: 0px 10px 10px 2px;
+    margin: 0px;    
+}
+
+%pProductos{
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 10px;    
+    font-weight: 500;    
+    word-spacing: 1px;
+    line-height: 20px;   
+}
+
+%imgProductos{    
+    box-shadow: 10px 10px 38px -4px nth($paleta-colores, 4);
+    width: 40%;
+    height: 40%;
 }

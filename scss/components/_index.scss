@@ -1,4 +1,5 @@
 .principal {
+    grid-area: main;
     background-color: nth($paleta-colores, 1);
     font-family: Montserrat, sans-serif; 
     font-size: 12px; 
@@ -6,87 +7,118 @@
     line-height: 25px; 
     color:nth($paleta-colores, 3);
     text-align: left; 
-    grid-area: main;
-    
-    .quees{
+    margin-top: 0px;
+
+    .imagenfondo{
     width: 100%;
     height: calc(100vh - 130px);   
     background-image: url(../img/inaugura.jpg);
+    line-height:0;
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 0px;
-        h2{
-            padding-top: 30px;
-            margin-left: 50px;    
-            text-align:left; 
-            font-size: 30px;
-            line-height: 40px; 
-        }
-        p{
-            margin-right: 40%;
-            margin-top: 10px;
-            margin-left: 50px;
-            padding-left: 0px;
-            font-weight: 400;
-            font-size: 15px;
-            font-style: normal;
-            line-height: 20px; 
-            text-align:left;
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            margin: 0px 28% 30px 28%;
+            text-shadow: 1px 1px 2px black;
+            background: linear-gradient(180deg, rgba(255,255,255,0.3533788515406162) 0%, rgba(148,187,233,0.3617822128851541) 100%);
+            .animate__animated.animate__fadeInDown {
+                --animate-duration: 10s;
+            }
+
+            h3{
+                padding-top: 20px;
+                font-size: 35px;
+                font-weight: 600; 
+                line-height: 35px;
+                text-align:center; 
+                border-bottom: 0.5px white double;
+                margin-bottom: 15px;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 30px;
+                font-style: normal;
+                line-height: 40px; 
+                text-align:center;
+            }
         }
     }
-    div{
+
+    .misionvision{
     display: flex;
     justify-content: space-between;
     align-items: center;
-        .mision{
-        background-color: nth($paleta-colores, 1);
-        padding-bottom: 10px;
-            h2{
-            margin-top: 1px;
-            margin-bottom: 1px;
-            padding-top: 10px;
-            padding-left: 30px;
-            font-size: 25px;
-            line-height: 30px; 
-            text-align:left;
+    background: radial-gradient(circle, #3a89b6a7 11%, rgba(32,66,122,0.8267682072829132) 59%);
+        
+        .koena{
+            
+            h1{
+                @extend %h1Pages;
+                text-align:left; 
             }
             p{
-            margin-right: 20%;
-            margin-left: 30px;
-            padding: 5px;
-            text-align:left;
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 20px; 
-            border-left: 2px nth($paleta-colores, 3) solid;
-            }    
+                margin-right: 40%;
+                margin-top: 10px;
+                padding-left: 15px;
+                font-weight: 400;
+                font-size: 15px;
+                font-style: normal;
+                line-height: 20px; 
+                text-align:left;
+            }
         }
-        .vision{
-        background-color: nth($paleta-colores, 1);
-        padding-bottom: 10px;
-            h2{
-            margin-top: 1px;
-            margin-bottom: 1px;
-            padding-top: 10px;
-            padding-right: 30px;
-            font-size: 25px;
-            font-style: normal;
-            line-height: 30px; 
-            text-align:right; 
-            color:nth($paleta-colores, 3);
+
+        .mision{
+            padding-bottom: 10px;
+                h2{
+                margin-top: 1px;
+                margin-bottom: 1px;
+                padding-top: 10px;
+                padding-left: 30px;
+                font-size: 25px;
+                line-height: 30px; 
+                text-align:left;
+                }
+                p{
+                margin-right: 20%;
+                margin-left: 30px;
+                padding: 5px;
+                text-align:left;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 20px; 
+                border-left: 2px nth($paleta-colores, 3) solid;
+                }    
             }
-            p{
-            margin-left: 10%;
-            margin-right: 30px;
-            padding: 5px;
-            text-align:right;
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 20px; 
-            border-right: 2px nth($paleta-colores, 3) solid;
-            }    
-        }        
+        .vision{
+            padding-bottom: 10px;
+                h2{
+                margin-top: 1px;
+                margin-bottom: 1px;
+                padding-top: 10px;
+                padding-right: 30px;
+                font-size: 25px;
+                font-style: normal;
+                line-height: 30px; 
+                text-align:right; 
+                color:nth($paleta-colores, 3);
+                }
+                p{
+                margin-left: 10%;
+                margin-right: 30px;
+                padding: 5px;
+                text-align:right;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 20px; 
+                border-right: 2px nth($paleta-colores, 3) solid;
+                }    
+            }        
     }
 }
