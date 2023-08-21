@@ -275,32 +275,27 @@
       background: linear-gradient(90deg, rgba(32, 66, 122, 0.663) 35%, rgba(58, 137, 182, 0.605) 100%);
       color: black;
       font-weight: 600; }
-  .principal-eventos .tarjetas {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    .principal-eventos .tarjetas .card-body {
-      background: linear-gradient(90deg, rgba(32, 66, 122, 0.4) 35%, rgba(58, 137, 182, 0.3) 100%);
+  .principal-eventos .card-body {
+    background: linear-gradient(90deg, rgba(32, 66, 122, 0.4) 35%, rgba(58, 137, 182, 0.3) 100%);
+    box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .principal-eventos .card-body h3 {
+      font-size: 20px;
+      color: black;
+      margin: 3px; }
+    .principal-eventos .card-body p {
+      font-size: 14px;
+      color: black; }
+    .principal-eventos .card-body a {
+      background-color: #20427a;
+      border-color: #20427a;
+      transition: background-color 2s;
+      transition: border-color 1s;
+      font-size: 14px;
       box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-      .principal-eventos .tarjetas .card-body h3 {
-        font-size: 20px;
-        color: black;
-        margin: 3px; }
-      .principal-eventos .tarjetas .card-body p {
-        font-size: 14px;
-        color: black; }
-      .principal-eventos .tarjetas .card-body a {
-        background-color: #20427a;
-        border-color: #20427a;
-        transition: background-color 2s;
-        transition: border-color 1s;
-        font-size: 14px;
-        box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-        .principal-eventos .tarjetas .card-body a:hover {
-          background-color: #3a89b6;
-          border: 2px #3a89b6 solid;
-          overflow: hidden; }
+      .principal-eventos .card-body a:hover {
+        background-color: #3a89b6;
+        border: 2px #3a89b6 solid;
+        overflow: hidden; }
 
 .principal-galeria {
   grid-area: main;

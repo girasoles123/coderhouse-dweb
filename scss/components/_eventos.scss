@@ -28,37 +28,31 @@
         font-weight: 600;
         }    
     }       
-    .tarjetas{ 
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        flex-wrap: wrap;
-
-        .card-body{
-            background: linear-gradient(90deg, rgba(32,66,122,0.4) 35%, rgba(58,137,182,0.3) 100%);
+    .card-body{
+        background: linear-gradient(90deg, rgba(32,66,122,0.4) 35%, rgba(58,137,182,0.3) 100%);
+        box-shadow: 0 8px 16px 0 nth($paleta-colores, 4), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    
+        h3{
+            font-size: 20px;  
+            color: nth($paleta-colores, 4);
+            margin:3px;
+        }  
+        p{
+            font-size: 14px;  
+            color: nth($paleta-colores, 4);
+        }  
+        a{
+            background-color: nth($paleta-colores, 1);                    
+            border-color: nth($paleta-colores, 1);
+            transition: background-color 2s;  
+            transition: border-color 1s;
+            font-size: 14px;
             box-shadow: 0 8px 16px 0 nth($paleta-colores, 4), 0 6px 20px 0 rgba(0,0,0,0.19); 
-            h3{
-                font-size: 20px;  
-                color: nth($paleta-colores, 4);
-                margin:3px;
-            }  
-            p{
-                font-size: 14px;  
-                color: nth($paleta-colores, 4);
-            }  
-            a{
-                background-color: nth($paleta-colores, 1);                    
-                border-color: nth($paleta-colores, 1);
-                transition: background-color 2s;  
-                transition: border-color 1s;
-                font-size: 14px;
-                box-shadow: 0 8px 16px 0 nth($paleta-colores, 4), 0 6px 20px 0 rgba(0,0,0,0.19); 
-                &:hover{    
-                    background-color: nth($paleta-colores, 2);
-                    border: 2px nth($paleta-colores, 2) solid; 
-                    overflow:hidden;
-                }
-            }  
-        } 
-    }
+            &:hover{    
+                background-color: nth($paleta-colores, 2);
+                border: 2px nth($paleta-colores, 2) solid; 
+                overflow:hidden;
+            }
+        }  
+    } 
 }
